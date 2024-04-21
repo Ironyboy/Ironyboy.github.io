@@ -3,54 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ironbricks</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Animals Webpage</title>
     <style>
-body{
-     text-align: center;
-    }
-</style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ffacac;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #555;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
 </head>
 <body>
 
-<div class="container">
-    <div class="Calculator">
-        <form>
-            <div class="display">
-                <input type="text" name="display">
-            </div>
-            <div>
-                <input type="button" value="AC" onclick="display.value = '' " class="operator">
-                <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0, -1)" class="operator">
-                <input type="button" value="." onclick="display.value += '.' " class="operator">
-                <input type="button" value="/" onclick="display.value += '/' " class="operator">
-            </div>
-            <div>
-                <input type="button" value="7" onclick="display.value += '7' ">
-                <input type="button" value="8" onclick="display.value += '8' ">
-                <input type="button" value="9" onclick="display.value += '9' " >
-                <input type="button" value="*" onclick="display.value += '*' "> 
-            </div>
-            <div>
-                <input type="button" value="4" onclick="display.value += '4' ">
-                <input type="button" value="5" onclick="display.value += '5' ">
-                <input type="button" value="6" onclick="display.value += '6' ">
-                <input type="button" value="-" onclick="display.value += '-' ">
-            </div>
-            <div>
-                <input type="button" value="1" onclick="display.value += '1' ">
-                <input type="button" value="2" onclick="display.value += '2' ">
-                <input type="button" value="3" onclick="display.value += '3' ">
-                <input type="button" value="+" onclick="display.value += '+' ">
-            </div>
-            <div>
-                <input type="button" value="00" onclick="display.value += '00' ">
-                <input type="button" value="0" onclick="display.value += '0' ">
-                <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal">
-            </div>
-        </form>
-    </div>
-</div>
+    <header>
+        <h1>Animals</h1>
+    </header>
+    
+    <nav>
+        <a href="#About us">About us</a>
+        <a href="#introduction">Introduction</a>
+        <a href="#mammals">Mammals</a>
+        <a href="#birds">Birds</a>
+        <a href="#reptiles">Reptiles</a>
+        <a href="#cats">cats</a>
+        <a href="#footer">Contact</a>
+    </nav>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Welcome to our Animals Webpage! Learn about the fascinating world of mammals, birds, and reptiles.</p>
+        <!-- Add more content as needed -->
+    </section>
+
+    <section id="mammals">
+        <h2>Mammals</h2>
+        <p>Mammals are warm-blooded vertebrates characterized by the presence of mammary glands, which enable them to nurse their young. Examples include lions, elephants, and dolphins.</p>
+        <!-- Add more content as needed -->
+    </section>
+
+    <section id="birds">
+        <h2>Birds</h2>
+        <p>Birds are feathered, winged, two-legged, warm-blooded creatures. They exhibit a wide range of behaviors and adaptations. Examples include eagles, penguins, and parrots.</p>
+        <!-- Add more content as needed -->
+    </section>
+
+    <section id="reptiles">
+        <h2>Reptiles</h2>
+        <p>Reptiles are cold-blooded vertebrates that include snakes, turtles, and crocodiles. They are known for their scaly skin and laying eggs. Learn more about their diverse characteristics.</p>
+        <!-- Add more content as needed -->
+    </section>
+    
+    <section id="About us">
+        <h2>About us</h2>
+        <p>We created this website for pupils. For them to learn more about Animals.</p>
+    </section>
+
+    <section id="cats">
+        <h2>cats</h2>
+        <p>Cats are a speices of animals. Animals like lions are part of the cat family. the cats that most people have at home are called house Cats.</p>
+    </section>
+
+    <footer id="footer">
+        <p>Contact us at ironbricks05@gmail.com</p>
+    </footer>
 
 </body>
 </html>
